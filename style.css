@@ -1,0 +1,85 @@
+
+h2{
+    color:whitesmoke;
+}
+body{
+    background-image: url("./img/background-img2.png");
+    background-color: greenyellow;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.form1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:white;
+    background-color: rgba(56, 27, 27, 0.5);
+    border-radius: 20px;
+    
+    padding: 2%;
+}
+#mainDiv {
+    display: flex;
+    justify-content: center;
+    /* background-color: bisque; */
+    flex-direction: column;
+    align-items: center;
+}
+.submit{
+    margin: 10px;
+}
+#begin-trivia{
+    margin-left:0;
+}
+h1 {
+    text-align:center;
+    color:gold;
+    background-color:rgb(0, 0, 0);
+    border-radius:10px;
+    padding:10px
+}
+button {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: black;
+    color: gold;
+    border-radius: 15px;
+    font-size: larger;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+#question-div {
+    display:flex;
+    background-color: rgba(0, 0, 0,0.5);
+    justify-content: center;
+    flex-direction: column;
+}
+#button-div{
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10%;
+    box-sizing: border-box;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: 1%;
+}
+#question-here{
+    text-align: center;
+}
+.answerImg{
+    aspect-ratio: 1/1;
+    width:200px;
+    margin-top:1%;
+}
+/* @media and screen(width<500px){
+    .form1{
+        width:100vw;
+    }
+} */
+.hidden{
+    display:none !important;
+}
+
