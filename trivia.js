@@ -79,7 +79,7 @@ function createQuestion(){
     correctAnswer = correctAnswer.replace(/&lt;/g,"<");
     correctAnswer = correctAnswer.replace(/&gt;/g,">");
     correctAnswer = correctAnswer.trim();
-    correctAnswer = `${correctAnswer}`;
+    // correctAnswer = `${correctAnswer}`;
     console.log("Right: " + correctAnswer);
     //incorrectas 
     let wrongAnswers = questionArray[iQuestion].incorrect_answers;
@@ -108,7 +108,7 @@ function createQuestion(){
     let answerButton = document.createElement("button");
     theAnswers.appendChild(answerButton);
     answerButton.innerHTML = `${currentAnswer}`;
-    answerButton.setAttribute("onclick",` checkAnswer("${answerButton.innerHTML}"),nextQuestion() `);
+    answerButton.setAttribute("onclick",` checkAnswer("${currentAnswer}"),nextQuestion() `);
     
     // theAnswers.innerHTML += `<button onclick=' checkAnswer("${currentAnswer}") '> ${currentAnswer}</button>`;
     } 
